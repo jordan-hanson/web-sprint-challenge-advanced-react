@@ -7,11 +7,12 @@ import CheckoutForm from "./CheckoutForm";
 test("form header renders", () => {
     render(<CheckoutForm />)
 
-    const formHeader = screen.getByText(/Checkout Form/i)
+    const formHeader = screen.getByText('Checkout Form')
 
-    expect(formHeader).getByRole('h2').toHaveTextContent('Checkout Form')
+    expect(formHeader).toHaveTextContent('Checkout Form')
 });
 
 test("form shows success message on submit with form details", () => {
+    render(<CheckoutForm />)
 
 });
